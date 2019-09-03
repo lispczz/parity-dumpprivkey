@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@parity/api": "^5.1.12",
+    "ethereumjs-wallet": "^0.6.3",
+    "http-jsonrpc-server": "^1.1.0"
+  }
+}
