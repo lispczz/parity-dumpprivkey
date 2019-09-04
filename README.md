@@ -1,7 +1,6 @@
 # Ethereum Private Keys Exporter
 
-Ethereum full nodes lack an API similar to [Bitcoin's dumpprivkey](https://bitcoin.org/en/developer-reference#dumpprivkey), which can be 
-used to dump private keys given addresses.
+Ethereum full nodes lack an API similar to [Bitcoind's dumpprivkey](https://bitcoin.org/en/developer-reference#dumpprivkey), which can be used to dump private keys given addresses.
 
 The repo is a JSON-RPC service filling this blank. Given address and password, the service fetches the keystore from full nodes and decrypts it into a private key, then returns the private key to the rpc caller.
 

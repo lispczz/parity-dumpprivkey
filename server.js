@@ -8,7 +8,7 @@ const api = new ParityApi(provider);
 
 async function dumpprivkey([address, password]) {
     const account = await api.parity.exportAccount(address, password);
-    return Wallet.fromV3(account, password).getPrivateKey().toString('hex');
+    return Wallet.fromV3(account, password).getPrivateKeyString();
 };
 
 const rpcServer = new RpcServer({
